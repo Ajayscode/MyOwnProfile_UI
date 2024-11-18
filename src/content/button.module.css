@@ -1,0 +1,24 @@
+.btn {
+  width: 150px;
+  height: 40px;
+  border-radius: 8px;
+  margin-top: 5px;
+  font-family: cursive;
+  transition: 0.7s;
+}
+
+.btn:hover {
+  box-shadow: 0px 0px 9px 9px rgba(73, 63, 47, 0.742);
+}
+
+.btn__primary {
+  border: none;
+  background-color: maroon;
+  color: black;
+}
+
+.btn__secondary {
+  background: transparent;
+  color: antiquewhite;
+  border: 1px solid antiquewhite;
+}

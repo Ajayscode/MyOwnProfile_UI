@@ -1,0 +1,31 @@
+.inp {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2em;
+  position: relative;
+  font-family: cursive;
+  margin-bottom: 20px;
+}
+
+.inp label {
+  font-size: large;
+  color: aliceblue;
+  align-self: flex-start;
+}
+
+.inp input {
+  border: none;
+  outline: none;
+  width: 250px;
+  height: 40px;
+  border-radius: 10px;
+  position: relative;
+  padding-left: 10px;
+  background-color: antiquewhite;
+  transition: 0.7s;
+  font-family: cursive;
+}
+
+.inp input:hover {
+  box-shadow: 0px 0px 12px 6px rgba(240, 248, 255, 0.307);
+}

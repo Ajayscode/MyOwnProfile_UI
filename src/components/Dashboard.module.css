@@ -1,0 +1,162 @@
+.main__Container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  gap: 10px;
+}
+
+.profile__Container {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  gap: 20%;
+  margin: 15px 10px;
+}
+
+.pict_holder {
+  width: 190px;
+  height: 190px;
+  border-radius: 20px;
+}
+
+.links {
+  font-size: large;
+  font-family: cursive;
+}
+
+.links a {
+  text-decoration: none;
+  color: antiquewhite;
+  transition: 0.7s;
+}
+
+.links a:hover {
+  color: aquamarine;
+  font-weight: 800;
+}
+.review_Container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#content_head {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+  position: relative;
+  align-items: center;
+}
+
+#content_head .btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: 280px;
+  outline: none;
+  border: none;
+  transition: 0.7s;
+  background-color: grey;
+  bottom: 12%;
+}
+
+.btn__convolute {
+  background: none;
+  position: relative;
+  border: none;
+  right: 15%;
+  width: 40px;
+  height: 40px;
+  color: rgb(44, 41, 41);
+  bottom: 12%;
+}
+
+#content_head .btn:hover {
+  box-shadow: 0px 0px 6px 4px rgba(240, 248, 255, 0.347);
+}
+
+#content {
+  width: 100%;
+  max-height: 400px;
+  color: aliceblue;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 150px;
+  margin: 30px 70px;
+  flex-wrap: wrap;
+  overflow-y: auto;
+}
+
+#content::-webkit-scrollbar {
+  width: 8px;
+}
+#content::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.3); /* Customize scrollbar color */
+  border-radius: 10px;
+}
+.review_box {
+  border: 2px solid rgb(206, 207, 200);
+  padding: 10px 30px;
+  border-radius: 20px;
+  transition: 0.7s;
+  background: linear-gradient(
+    to top,
+    rgb(19, 34, 47),
+    rgba(25, 55, 82, 0.46),
+    rgba(34, 63, 90, 0.153)
+  );
+  margin-top: 30px;
+  color: antiquewhite;
+  transition: 0.7s;
+  min-width: 150px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.review_box:hover {
+  box-shadow: 0px 0px 6px 6px rgba(166, 201, 187, 0.355);
+}
+
+.review_box h4 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.icon {
+  position: relative;
+  top: 7px;
+  margin-right: 2px;
+}
+
+.review_box p:nth-child(4) {
+  text-align: center;
+}
+
+.line {
+  border-top: 2px solid antiquewhite;
+  width: 90%;
+  margin-bottom: 30px;
+}
+
+.edit {
+  position: relative;
+  border: none;
+  border-radius: 25%;
+  width: 35px;
+  height: 35px;
+  background: none;
+  color: antiquewhite;
+}

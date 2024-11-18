@@ -1,0 +1,46 @@
+<svg width="200px" height="200px" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Main smashed tomato body with irregular outline -->
+  <path d="M100 110
+           C 70 90, 60 150, 105 150
+           C 130 160, 170 140, 140 115
+           C 170 105, 130 70, 100 110
+           Z"
+        fill="#FF6347" />
+
+  <!-- Additional splatter around main tomato -->
+  <path d="M130 150
+           C 120 140, 140 130, 150 140
+           C 155 145, 140 155, 130 150
+           Z"
+        fill="#D93E3E" />
+
+  <path d="M70 120
+           C 65 115, 75 105, 80 110
+           C 85 115, 75 125, 70 120
+           Z"
+        fill="#D93E3E" />
+
+  <path d="M160 100
+           C 155 95, 165 85, 170 90
+           C 175 95, 165 105, 160 100
+           Z"
+        fill="#D93E3E" />
+
+  <!-- Smaller droplets for more splatter effect -->
+  <circle cx="60" cy="90" r="8" fill="#FF6347" />
+  <circle cx="135" cy="80" r="6" fill="#FF6347" />
+  <circle cx="110" cy="160" r="7" fill="#FF6347" />
+  <circle cx="170" cy="130" r="5" fill="#FF6347" />
+
+  <!-- Tomato stem with twisted look -->
+  <polygon points="95,100 105,100 100,80 115,105 85,105" fill="#228B22" />
+  <polygon points="100,80 110,95 108,90 105,80" fill="#196F17" />
+  <polygon points="100,80 90,95 92,90 95,80" fill="#196F17" />
+
+  <!-- Highlights for shine effect on the main splat -->
+  <ellipse cx="95" cy="115" rx="15" ry="10" fill="white" opacity="0.3" />
+  <ellipse cx="120" cy="135" rx="20" ry="12" fill="white" opacity="0.2" />
+
+  <!-- Darker shadow for a more dimensional splat -->
+  <ellipse cx="105" cy="130" rx="50" ry="30" fill="black" opacity="0.1" />
+</svg>
