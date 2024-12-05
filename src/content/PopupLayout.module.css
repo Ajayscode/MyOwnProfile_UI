@@ -7,6 +7,8 @@
   justify-content: center;
   position: absolute;
   bottom: 100%;
+  z-index: 5;
+  margin-top: 10px;
 }
 
 .content {
@@ -16,8 +18,8 @@
   justify-content: center;
   flex-direction: column;
   gap: 0px;
-  animation: slidein 0.3s linear forwards;
-  top: 20px;
+  max-height: 90vh;
+  /* animation: slidein 0.3s linear forwards; */
 }
 
 .holder {

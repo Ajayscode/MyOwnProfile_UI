@@ -1,4 +1,4 @@
-.inp {
+/* .inp {
   display: flex;
   flex-direction: column;
   gap: 0.2em;
@@ -28,4 +28,78 @@
 
 .inp input:hover {
   box-shadow: 0px 0px 12px 6px rgba(240, 248, 255, 0.307);
+}
+
+.inp textarea {
+  border-radius: 20px;
+  padding: 10px;
+  outline: none;
+  border: none;
+  position: relative;
+  padding-left: 10px;
+  background-color: antiquewhite;
+  transition: 0.7s;
+  font-family: cursive;
+}
+
+.inp textarea:hover {
+  box-shadow: 0px 0px 12px 6px rgba(240, 248, 255, 0.307);
+} */
+
+.inp {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em; /* Increased gap for better spacing */
+  position: relative;
+  font-family: cursive; /* Changed font for better readability */
+  margin-bottom: 20px;
+}
+
+.inp label {
+  font-size: 1.2em; /* Adjusted font size for better readability */
+  color: #f0f8ff; /* Ensure consistent color usage */
+  align-self: flex-start;
+}
+
+.inp input,
+.inp textarea {
+  border: none;
+  outline: none;
+  width: 100%; /* Make input fields responsive */
+  max-width: 300px; /* Set a max-width to avoid excessive expansion */
+  height: auto; /* Ensure height adjusts to content */
+  min-height: 40px; /* Minimum height for input fields */
+  padding: 10px; /* Unified padding for both input and textarea */
+  border-radius: 10px; /* Consistent border-radius for both elements */
+  background-color: #faebd7; /* Slightly adjusted color for better contrast */
+  transition: box-shadow 0.5s, background-color 0.5s; /* Added transition for background-color */
+  font-family: cursive; /* Consistent font for both elements */
+}
+
+.inp input:focus,
+.inp textarea:focus {
+  background-color: #fff; /* Change background on focus for better UX */
+  box-shadow: 0px 0px 12px 6px rgba(240, 248, 255, 0.307);
+}
+
+.inp textarea {
+  resize: none;
+  min-height: 100px; /* Set minimum height for textarea */
+}
+
+.inp textarea:focus {
+  background-color: #fff; /* Ensure consistent focus state */
+}
+
+/* Targeting the entire scrollbar */
+.inp textarea::-webkit-scrollbar {
+  width: 8px;
+} /* Targeting the scrollbar track */
+.inp textarea::-webkit-scrollbar-track {
+  background: aliceblue;
+  border-radius: 20px;
+} /* Targeting the scrollbar thumb */
+.inp textarea::-webkit-scrollbar-thumb {
+  background: #261d1d; /* Color of the thumb */
+  border-radius: 20px; /* Rounding the corners */
 }

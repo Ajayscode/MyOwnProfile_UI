@@ -1,5 +1,11 @@
-import Dashboard from "../components/Dashboard";
+import { Outlet } from "react-router";
+import MainNavigation from "../content/MainNavigation";
 
 export default function HomePage() {
-  return <Dashboard />;
+  return (
+    <>
+      <MainNavigation />
+      <Outlet />
+    </>
+  );
 }

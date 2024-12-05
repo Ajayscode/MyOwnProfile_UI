@@ -72,6 +72,9 @@ const reviewSlice = createSlice({
         state.reviews = filtered_items;
       }
     },
+    handleBlurToggle(state) {
+      state.isblur = !state.isblur;
+    },
   },
 });
 

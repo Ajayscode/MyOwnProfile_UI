@@ -1,8 +1,24 @@
 .container {
-  background: rgb(7, 7, 7);
-  padding: 30px;
+  background: rgb(44, 49, 40);
+  padding: 50px;
   border-radius: 15px;
   box-shadow: 2px 8px 8px rgba(0, 0, 0, 0.3);
+  height: inherit;
+  overflow-y: auto;
+}
+
+.container::-webkit-scrollbar {
+  width: 5px;
+}
+
+.container::-webkit-scrollbar-track {
+  background: none;
+  border-radius: 20px;
+}
+
+.container::-webkit-scrollbar-thumb {
+  background-color: rgba(240, 248, 255, 0.27);
+  border-radius: 20px;
 }
 
 .btn__grp {

@@ -1,7 +1,11 @@
 body {
-  background-color: rgb(7, 7, 7);
+  /* background-color: #95c7d6; */
   overflow-x: hidden;
   overflow-y: hidden;
+  background: url("./src/assets/backgroundImg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 .main-cont {

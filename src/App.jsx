@@ -3,16 +3,28 @@ import { RouterProvider } from "react-router-dom";
 import Login from "./components/login";
 import HomePage from "./pages/homepage";
 import { useSelector } from "react-redux";
-import About from "./components/skills";
-
+import About from "./components/about";
+import Dashboard from "./components/Dashboard";
+import Education from "./components/Education";
 const route = createBrowserRouter([
-  {
-    path: "/login",
-    element: <Login />,
-  },
   {
     path: "/",
     element: <HomePage />,
+    children: [
+      {
+        index: true,
+        element: <Dashboard />,
+      },
+      {
+        path: "login",
+        element: <Login />,
+      },
+      { path: "about", element: <About /> },
+      {
+        path: "edu",
+        element: <Education />,
+      },
+    ],
   },
 ]);
 

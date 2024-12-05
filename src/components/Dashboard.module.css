@@ -31,12 +31,12 @@
 
 .links a {
   text-decoration: none;
-  color: antiquewhite;
+  color: rgb(0, 0, 0);
   transition: 0.7s;
 }
 
 .links a:hover {
-  color: aquamarine;
+  color: rgb(20, 29, 26);
   font-weight: 800;
 }
 .review_Container {
@@ -119,7 +119,7 @@
     rgba(34, 63, 90, 0.153)
   );
   margin-top: 30px;
-  color: antiquewhite;
+  color: rgb(48, 46, 34);
   transition: 0.7s;
   min-width: 150px;
   text-align: center;
@@ -129,7 +129,6 @@
 .review_box:hover {
   box-shadow: 0px 0px 6px 6px rgba(166, 201, 187, 0.355);
 }
-
 .review_box h4 {
   text-align: center;
   text-transform: uppercase;
@@ -146,7 +145,7 @@
 }
 
 .line {
-  border-top: 2px solid antiquewhite;
+  border-top: 2px solid rgb(0, 0, 0);
   width: 90%;
   margin-bottom: 30px;
 }
