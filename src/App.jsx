@@ -6,6 +6,8 @@ import { useSelector } from "react-redux";
 import About from "./components/about";
 import Dashboard from "./components/Dashboard";
 import Education from "./components/Education";
+import Skills from "./components/skills";
+import Contact from "./components/contact";
 const route = createBrowserRouter([
   {
     path: "/",
@@ -21,8 +23,16 @@ const route = createBrowserRouter([
       },
       { path: "about", element: <About /> },
       {
-        path: "edu",
+        path: "education",
         element: <Education />,
+      },
+      {
+        path: "skills",
+        element: <Skills />,
+      },
+      {
+        path: "contact",
+        element: <Contact />,
       },
     ],
   },

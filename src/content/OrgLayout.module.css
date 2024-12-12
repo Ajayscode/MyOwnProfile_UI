@@ -40,8 +40,8 @@
   height: 180px;
   /* margin: 5px; */
   border-radius: 20px;
+  overflow: hidden;
   border: 1px solid rgb(0, 0, 0);
-  overflow-y: scroll;
   background: linear-gradient(
     to top,
     #9fc3af,
@@ -50,11 +50,6 @@
   );
   /* padding-top: -8px; */
 }
-
-.content::-webkit-scrollbar {
-  scrollbar-width: none;
-}
-
 .content h2 {
   margin-left: 5px;
   margin-right: 5px;
@@ -70,7 +65,23 @@
 }
 
 .content ol {
+  height: 150px;
   list-style: decimal;
   color: rgb(0, 0, 0);
   padding-top: 5px;
+  overflow-y: scroll;
+}
+
+.content ol::-webkit-scrollbar {
+  width: 5px;
+}
+
+.content ol::-webkit-scrollbar-track {
+  background: none;
+  border-radius: 20px;
+}
+
+.content ol::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.27);
+  border-radius: 20px;
 }

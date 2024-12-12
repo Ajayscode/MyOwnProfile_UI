@@ -5,16 +5,17 @@ import ContactlessIcon from "@mui/icons-material/Contactless";
 import InfoIcon from "@mui/icons-material/Info";
 import HomeRepairServiceIcon from "@mui/icons-material/HomeRepairService";
 import SchoolIcon from "@mui/icons-material/School";
-import { redirect } from "react-router-dom";
 import CustomNavLink from "./CustomNavLink";
 
 export default function MainNavigation() {
-  const [value, setvalue] = useState("home");
+  const navbar = [
+    { value: "home", icon: <HomeIcon /> },
+    { value: "about", icon: <InfoIcon /> },
+    { value: "skills", icon: <HomeRepairServiceIcon /> },
+    { value: "education", icon: <SchoolIcon /> },
+    { value: "contact", icon: <ContactlessIcon /> },
+  ];
 
-  function handleChange(e, newValue) {
-    setvalue(newValue);
-    redirect(`./${newValue}`);
-  }
   return (
     <>
       <BottomNavigation
@@ -25,34 +26,19 @@ export default function MainNavigation() {
           left: "20%",
           zIndex: "5",
         }}
-        value={value}
-        onChange={handleChange}
       >
-        <CustomNavLink label="Home" to="/" icon={<HomeIcon />} value="home" />
-        <CustomNavLink
-          label="About"
-          to="about"
-          icon={<InfoIcon />}
-          value="about"
-        />
-        <CustomNavLink
-          label="Skills"
-          to="skills"
-          icon={<HomeRepairServiceIcon />}
-          value="skills"
-        />
-        <CustomNavLink
-          label="Education"
-          to="edu"
-          icon={<SchoolIcon />}
-          value="education"
-        />
-        <CustomNavLink
-          label="Contact"
-          to="contact"
-          icon={<ContactlessIcon />}
-          value="contact"
-        />
+        {navbar.map((ele, index) => {
+          return (
+            <CustomNavLink
+              label={ele.value}
+              to={ele.value === "home" ? "/" : ele.value}
+              icon={ele.icon}
+              value={ele.value}
+              active={false}
+              key={index}
+            />
+          );
+        })}
       </BottomNavigation>
     </>
   );
