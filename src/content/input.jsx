@@ -1,16 +1,20 @@
 /* eslint-disable react/prop-types */
 import classes from "./input.module.css";
 import { Rating } from "@mui/material";
+import { forwardRef } from "react";
 
-export default function Input({
-  label,
-  placeholder,
-  type = "text",
-  value = 0,
-  func,
-  rating = false,
-  lines = 20,
-}) {
+const Input = forwardRef(function Input(
+  {
+    label,
+    placeholder,
+    type = "text",
+    value = 0,
+    func,
+    rating = false,
+    lines = 20,
+  },
+  ref
+) {
   const inputele =
     type !== "textarea" ? (
       <input
@@ -18,6 +22,7 @@ export default function Input({
         type={type}
         defaultValue={value !== 0 ? value : ""}
         onChange={func}
+        ref={ref}
       />
     ) : (
       <textarea
@@ -27,6 +32,7 @@ export default function Input({
         rows={lines}
         cols={50}
         style={{ fontFamily: "cursive" }}
+        ref={ref}
       />
     );
   return (
@@ -39,4 +45,6 @@ export default function Input({
       )}
     </div>
   );
-}
+});
+
+export default Input;

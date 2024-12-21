@@ -31,9 +31,9 @@ export default function Skills() {
         </header>
         <div id={classes.line}></div>
         <div className={classes.skillBox}>
-          {skillset.map((ele) => {
+          {skillset.map((ele, index) => {
             return (
-              <h3>
+              <h3 key={index}>
                 {ele}
                 <i>
                   <Rating />

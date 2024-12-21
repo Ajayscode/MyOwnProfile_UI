@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import classes from "./button.module.css";
 import { Tooltip } from "@mui/material";
-export default function Button({ label, type, level, func }) {
+export default function Button({ label, type = "", level, func }) {
   return (
     <>
       <Tooltip title={label}>

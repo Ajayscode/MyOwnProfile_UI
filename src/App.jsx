@@ -8,6 +8,8 @@ import Dashboard from "./components/Dashboard";
 import Education from "./components/Education";
 import Skills from "./components/skills";
 import Contact from "./components/contact";
+import EduDetails from "./content/EduDetails";
+
 const route = createBrowserRouter([
   {
     path: "/",
@@ -25,6 +27,12 @@ const route = createBrowserRouter([
       {
         path: "education",
         element: <Education />,
+        children: [
+          {
+            index: true,
+            element: <EduDetails />,
+          },
+        ],
       },
       {
         path: "skills",

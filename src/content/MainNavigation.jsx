@@ -1,5 +1,4 @@
 import BottomNavigation from "@mui/material/BottomNavigation";
-import { useState } from "react";
 import HomeIcon from "@mui/icons-material/Home";
 import ContactlessIcon from "@mui/icons-material/Contactless";
 import InfoIcon from "@mui/icons-material/Info";

@@ -6,7 +6,8 @@ import DomainIcon from "@mui/icons-material/Domain";
 import classes from "../components/Education.module.css";
 import ModeEditIcon from "@mui/icons-material/ModeEdit";
 import { Tooltip } from "@mui/material";
-export default function EduContent({ name, duration, grade, degree }) {
+
+export default function EduContent({ name, duration, grade, degree, func }) {
   return (
     <div id={classes.edbox}>
       <ol>
@@ -37,7 +38,7 @@ export default function EduContent({ name, duration, grade, degree }) {
         </p>
       </div>
       <Tooltip title="Edit">
-        <button>
+        <button onClick={func}>
           <ModeEditIcon />
         </button>
       </Tooltip>
