@@ -38,10 +38,10 @@ export default function Dashboard() {
               <NavLink to="./skills">Technical Skills</NavLink>
             </p>
             <p>
-              <NavLink to="./edu">education</NavLink>
+              <NavLink to="./education">education</NavLink>
             </p>
             <p>
-              <NavLink to="./bio">bio</NavLink>
+              <NavLink to="./contact">contact</NavLink>
             </p>
           </div>
         </div>

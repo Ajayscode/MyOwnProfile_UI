@@ -85,3 +85,7 @@
   background-color: rgba(0, 0, 0, 0.27);
   border-radius: 20px;
 }
+
+.content ol li:last-child {
+  margin-bottom: 60px;
+}

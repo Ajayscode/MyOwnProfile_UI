@@ -4,15 +4,15 @@ import Button from "../content/button";
 import classes from "./Education.module.css";
 export default function Skills() {
   const skillset = [
-    "python",
-    "javascript",
-    "react",
-    "flask",
-    "mysql",
-    "snowflake",
-    "nextjs",
-    "redux",
-    "redux-2",
+    ["python", 4],
+    ["javascript", 4.5],
+    ["react", 4.7],
+    ["flask", 3.9],
+    ["mysql", 5],
+    ["snowflake", 3.5],
+    ["nextjs", 4],
+    ["redux", 4.5],
+    ["redux-2", 3],
   ];
 
   return (
@@ -34,9 +34,9 @@ export default function Skills() {
           {skillset.map((ele, index) => {
             return (
               <h3 key={index}>
-                {ele}
+                {ele[0]}
                 <i>
-                  <Rating />
+                  <Rating value={ele[1]} precision={0.1} />
                 </i>
               </h3>
             );
